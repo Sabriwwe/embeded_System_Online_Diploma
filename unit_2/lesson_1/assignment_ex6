@@ -1,0 +1,33 @@
+/*
+EX6:
+
+Write Source Code to Swap Two Numbers
+
+#########Console_output######
+Enter value of a: 1.20
+Enter value of b: 2.45
+
+After swapping, value of a = 2.45
+After swapping, value of b = 1.2
+name : sabri elenani.
+*/
+
+#include <stdio.h>
+
+int main ()
+{
+
+  float a ,b ,c ;
+  printf ("Enter value of a: ");
+  scanf ("%f", &a); // 1.20
+  printf ("Enter value of b: ");
+  scanf ("%f", &b); //2.45
+  c = a ;
+  a = b ;
+  b = c ;
+  
+  printf ("After swapping, value of a =%f", a ); //2.45
+  printf ("\n After swapping, value of b =%f", b );
+  // 1.20 both got swapped
+  return 0 ;
+}
