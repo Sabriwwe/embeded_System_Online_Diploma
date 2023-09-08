@@ -1,0 +1,24 @@
+/*
+EX2:
+
+Write C Program to Print a Integer Entered by a User
+i should see the Console as following:
+##########Console-output###
+Enter a integer: 25
+You entered: 25
+###########################
+name : sabri elenani.
+*/
+
+#include <stdio.h>
+
+int main() {
+    
+    int your ;
+    printf("Enter an integer : ");
+// input = 25
+    scanf ("%d",&your);
+    printf ("You entered : %d ", your );
+//output = 25
+    return 0 ;
+}
