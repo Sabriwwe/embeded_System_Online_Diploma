@@ -1,0 +1,26 @@
+/*
+EX3:
+
+Write C Program to Add Two Integers
+
+i should see the Console as following:
+##########Console-output###
+Enter two integers: 12
+11
+Sum: 23
+###########################
+name : sabri elenani .
+*/
+
+#include <stdio.h>
+
+int
+main ()
+{
+
+  int fr, sd;
+  printf ("Enter two integer : ");
+  scanf ("%d", &fr); //12
+  scanf ("%d",&sd); //11
+  printf ("You entered : %d ", fr + sd); // 23
+}
