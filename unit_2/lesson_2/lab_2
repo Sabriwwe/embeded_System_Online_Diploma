@@ -1,0 +1,27 @@
+/*
+lab_2_lesson_2_unit_2
+name : sabri elenani.
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    float y [5] , x[] = {5,16,22,3.5,15};
+    
+    
+    
+    for (int i =0 ; i<5 ; i++)
+    {
+        y[i]= 5*x[i]*x[i] + 3*x[i] + 2;
+    }
+    
+    for (int i =0 ; i<5 ; i++)
+    {
+        printf("\n y(%2f) = %2f", x[i] , y[i]);
+        
+    }
+    
+    
+    return 0;
+}
