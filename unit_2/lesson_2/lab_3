@@ -1,0 +1,44 @@
+/*
+lab_3_lesson_2_unit_2
+name : sabri elenani.
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int y [3][3] ;
+    
+    for (int i =0 ; i<3 ; i++)
+    {
+        for (int j =0 ; j<3 ; j++)
+       {
+        printf("enter the element num [%d,%d]", i , j);
+        scanf("%d", &y[i][j]);
+       }
+        
+    }
+    
+    printf("the matrix elements is :\n");
+    
+    for (int i =0 ; i<3 ; i++)
+    {
+        for (int j =0 ; j<3 ; j++)
+       {
+        printf("%d   " , y[i][j] );
+       }
+        printf("\n");
+    }
+    
+     printf("the transpose matrix element is :\n");
+    for (int i =0 ; i<3 ; i++)
+    {
+        for (int j =0 ; j<3 ; j++)
+       {
+        printf("%d   ", y[j][i] );
+       }
+        printf("\n");
+    }
+    
+    return 0;
+}
