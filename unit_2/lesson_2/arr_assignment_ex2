@@ -1,0 +1,46 @@
+/*
+EX2: C Program to Calculate Average Using Arrays 
+This program takes n number of element from user(where, n is specified by user), stores data in an array and calculates the average of those numbers. 
+
+name : sabri elenani.
+
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int d ;
+    float x [100] , n , sum=0 ;
+    
+    printf("Enter the number of data: ");
+    scanf("%d",&d);
+    //6
+    
+    
+    for(int i=0 ; i<d ;i++)
+    {
+        printf("%d. Enter number: ",i+1);
+        scanf("%f",&n);
+        x[i]=n;
+    }
+    /*
+    1. Enter number: 45.3 
+    2. Enter number: 67.5 
+    3. Enter number: -45.6 
+    4. Enter number: 20.34 
+    5. Enter number: 33 
+    6. Enter number: 45.6
+    */
+    
+    for(int i=0 ; i<d ;i++)
+    {
+        
+        sum+=x[i] ;
+    }
+    
+    printf("Average = %f ",sum/d);
+    //Average = 27.69 
+    
+    return 0;
+}
