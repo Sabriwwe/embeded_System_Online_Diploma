@@ -1,0 +1,25 @@
+/*
+lab_1_lesson_2_unit_1
+name : sabri elenani
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int x [10];
+    for (int i =0 ; i <10 ; i++)
+    {
+        printf("Enter the student %d degree : ",i);
+        scanf("%d",&x[i]);
+    }
+    
+    for (int i =0 ; i <10 ; i++)
+    {
+        printf("\nStudent %d degree is : %d ", i , x[i]);
+        
+    }
+    
+    
+    return 0;
+}
