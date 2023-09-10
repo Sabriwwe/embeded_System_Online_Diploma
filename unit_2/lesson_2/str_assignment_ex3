@@ -1,0 +1,26 @@
+/*
+EX3: C Program to Reverse String Without Using Library Function 
+You can only use library function strlen(),To find the length of the string
+
+name : sabri elenani
+*/
+
+#include <string.h>
+#include <stdio.h>
+int main()
+{
+    char str[100];
+    int length=0;
+    
+     //input:Pritesh
+    printf("Enter a string: \n");
+    scanf("%s",str);
+
+    printf("\nReverse string is:\n");
+    for(int i=strlen(str); i>=0 ; i--)
+    {
+        printf("%c",str[i]);
+    }
+    //output:hsetirp
+     return 0;
+}
