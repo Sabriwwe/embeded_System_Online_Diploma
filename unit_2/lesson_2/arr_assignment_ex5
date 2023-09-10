@@ -1,0 +1,38 @@
+/*
+C Program to Search an element in Array 
+name : sabri elenani.
+
+*/
+
+#include <stdio.h>
+
+int main()
+{
+	int arr[100] = { 0 };
+	int i, x, pos, n = 0;
+	
+	printf("enter the number of elements :");
+	scanf("%d",&n);
+// 5
+
+	printf("enter the array elements : \n");
+	for (i = 0; i < n; i++)
+		scanf("%d",&arr[i]);
+// input : 11 22 33 44 55 
+
+	printf("enter the element to be searched : \n");
+	scanf("%d",&x);
+	// 44
+	
+	for(int i=0; i<n ;i++)
+	{
+	    if(arr[i] == x)
+	    {
+	        printf("Number found at the location = %d", i+1 );
+	    }
+	    
+	}
+// output : 4
+
+	return 0;
+}
