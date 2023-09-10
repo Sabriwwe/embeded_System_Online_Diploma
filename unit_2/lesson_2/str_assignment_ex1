@@ -1,0 +1,32 @@
+/*
+Ex1: C Program to Find the Frequency of Characters in a String 
+This program asks user to enter a string and a character and this program checks how many times that character is repeated in the string entered by user. 
+
+name : sabri elenani
+
+*/
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[1000], ch;
+    int count = 0;
+
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+    //input: this web site is awsome
+
+    printf("Enter a character to find its frequency: ");
+    scanf("%c", &ch);
+    // e
+
+    for (int i = 0; str[i] != '\0'; ++i) {
+        if (ch == str[i])
+            ++count;
+    }
+
+    printf("Frequency of %c = %d", ch, count);
+    // output : Frequency of e = 3
+    return 0;
+}
