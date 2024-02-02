@@ -1,0 +1,24 @@
+/*
+name : sabri talaat elenani .
+Ex6 : c program to calculate sum of natural numbers
+*/
+
+#include <stdio.h>
+
+int main() {
+    int num, i, sum = 0;
+
+    // Input number from user
+    printf("Enter a positive integer: ");
+    scanf("%d", &num);
+
+    // Calculate the sum of natural numbers up to num
+    for (i = 1; i <= num; ++i) {
+        sum += i;
+    }
+
+    // Print the sum
+    printf("Sum of natural numbers up to %d is: %d\n", num, sum);
+
+    return 0;
+}
