@@ -1,0 +1,47 @@
+/*
+name : sabri talaat elenani.
+Ex8 : c program to make a simple calculator to add , subtract , multiply or divide using switch case   
+*/
+
+#include <stdio.h>
+
+int main() {
+    char operator;
+    double num1, num2, result;
+
+    // Input operator from user
+    printf("Enter operator either + or - or * or divide : ");
+    scanf(" %c", &operator);
+
+    // Input two numbers from user
+    printf("Enter two operands: ");
+    scanf("%lf %lf", &num1, &num2);
+
+    // Perform calculation based on the operator
+    switch (operator) {
+        case '+':
+            result = num1 + num2;
+            printf("%.2lf + %.2lf = %.2lf\n", num1, num2, result);
+            break;
+        case '-':
+            result = num1 - num2;
+            printf("%.2lf - %.2lf = %.2lf\n", num1, num2, result);
+            break;
+        case '*':
+            result = num1 * num2;
+            printf("%.2lf * %.2lf = %.2lf\n", num1, num2, result);
+            break;
+        case '/':
+            if (num2 != 0) {
+                result = num1 / num2;
+                printf("%.2lf / %.2lf = %.2lf\n", num1, num2, result);
+            } else {
+                printf("Error! Division by zero is not allowed.\n");
+            }
+            break;
+        default:
+            printf("Error! Invalid operator.\n");
+    }
+
+    return 0;
+}
