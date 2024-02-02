@@ -1,2 +1,2 @@
 Unit 2: C Programming
-here i will put my codes in assignments + lab1 + projects if they were needed
+here i will put my codes in assignments + labs + projects if they were founded
