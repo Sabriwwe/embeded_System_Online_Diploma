@@ -1,0 +1,47 @@
+/*
+name : sabri talaat elenai.
+Ex3 : c program to reverse sentence using recursion 
+*/
+
+#include <stdio.h>
+#include <string.h>
+
+void reverseSentence(char sentence[]);
+
+int main() {
+    char sentence[100];
+
+    // Input sentence from user
+    printf("Enter a sentence: ");
+    fgets(sentence, sizeof(sentence), stdin);
+
+    // Call the function to reverse the sentence
+    printf("Reversed sentence: ");
+    reverseSentence(sentence);
+
+    return 0;
+}
+
+void reverseSentence(char sentence[]) {
+    // Find the length of the sentence
+    int len = strlen(sentence);
+
+    if (len <= 1) {
+        return;
+    }
+
+    // Recursive call: find the first occurrence of a space and print the words
+    int i;
+    for (i = 0; i < len; ++i) {
+        if (sentence[i] == ' ' || sentence[i] == '\n') {
+            reverseSentence(sentence + i + 1);
+            break;
+        }
+    }
+
+    // Print the word (from space/newline to next space/newline or null character)
+    printf("%.*s ", i, sentence);
+
+    // Replace the space/newline with a null character to separate words
+    sentence[i] = '\0';
+}
