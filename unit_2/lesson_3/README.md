@@ -1,1 +1,1 @@
-lesson_1 labs and assignments.
+lesson_3 labs and assignments.
