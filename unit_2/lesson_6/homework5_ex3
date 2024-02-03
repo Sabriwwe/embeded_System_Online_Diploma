@@ -1,0 +1,47 @@
+/*
+name : sabri talaat elenani
+Ex3 : c program to adding two complex number by passing structure to function 
+*/
+
+#include <stdio.h>
+
+// Define a structure to represent a complex number
+struct Complex {
+    float real;
+    float imaginary;
+};
+
+// Function prototype to add two complex numbers
+struct Complex addComplex(struct Complex c1, struct Complex c2);
+
+int main() {
+    struct Complex num1, num2, sum;
+
+    // Input first complex number from user
+    printf("for 1st complex number: ");
+    printf("enter real and imaginary respectivaly: ");
+    scanf("%f %f", &num1.real, &num1.imaginary);
+
+    // Input second complex number from user
+    printf("for 2nd complex number: ");
+    printf("enter real and imaginary respectivaly: ");
+    scanf("%f %f", &num2.real, &num2.imaginary);
+
+    // Call the function to add the complex numbers
+    sum = addComplex(num1, num2);
+
+    // Print the sum
+    printf("Sum: %f + %fi\n", sum.real, sum.imaginary);
+
+    return 0;
+}
+
+// Function to add two complex numbers
+struct Complex addComplex(struct Complex c1, struct Complex c2) {
+    struct Complex result;
+
+    result.real = c1.real + c2.real;
+    result.imaginary = c1.imaginary + c2.imaginary;
+
+    return result;
+}
