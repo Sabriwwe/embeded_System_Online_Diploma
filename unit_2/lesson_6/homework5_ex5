@@ -1,0 +1,24 @@
+/*
+name : sabri talaat elenani
+Ex5 : c program to area of a circle passing argument to macro
+*/
+
+#include <stdio.h>
+
+// Macro 
+#define AREA_OF_CIRCLE(r) ((r) * (r) * 3.14159)
+
+int main() {
+    float radius;
+
+    // Input
+    printf("Enter the radius: ");
+    scanf("%f", &radius);
+
+    // Calculate area using macro
+    float area = AREA_OF_CIRCLE(radius);
+
+    printf("Area = %f\n", area);
+
+    return 0;
+}
