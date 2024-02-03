@@ -1,0 +1,46 @@
+/*
+name : sabri talaat elenani.
+Ex2 : c program to add two distances (feet-inch) using structure
+*/
+
+#include <stdio.h>
+
+// Define a structure to represent a distance
+struct Distance {
+    int feet;
+    float inches;
+};
+
+int main() {
+    struct Distance distance1, distance2, sum;
+
+    // Input first distance from user
+    printf("Enter information for 1st distance: ");
+    printf("Enter feet: ");
+    scanf("%d, &distance1.feet);
+    printf("Enter inches: ");
+    scanf("%f", &distance1.inches);
+
+    // Input second distance from user
+    printf("Enter information for 2nd distance: ");
+    printf("Enter feet: ");
+    scanf("%d, &distance1.feet);
+    printf("Enter inches: ");
+    scanf("%f", &distance1.inches);
+
+  
+    // Add the distances
+    sum.feet = distance1.feet + distance2.feet;
+    sum.inches = distance1.inches + distance2.inches;
+
+    // If the total inches exceeds 12, adjust feet and inches
+    if (sum.inches >= 12) {
+        sum.feet += sum.inches / 12;
+        sum.inches %= 12;
+    }
+
+    // Print the sum
+    printf("Sum of distances: %d feet %f inches\n", sum.feet, sum.inches);
+
+    return 0;
+}
