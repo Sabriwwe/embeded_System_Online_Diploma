@@ -1,0 +1,27 @@
+/*
+name : sabri talaat elenani.
+Ex6 : write output of this program.
+*/
+
+#include <stdio.h>
+
+union job{
+char name[32];
+float salary;
+int worker_no;
+}u;
+struct job1{
+char name[32];
+float salary ;
+int worker_no;
+}s;
+int main(){
+  printf("sizeof union = %d ",sizeof(u));
+  printf("sizeof struct = %d ",sizeof(u));
+  return 0 ;
+}
+
+/* answer : the output will be
+sizeof union = 32 (byte)
+sizeof union = 40 (byte)
+*/
