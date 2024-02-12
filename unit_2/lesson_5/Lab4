@@ -1,0 +1,38 @@
+/*
+lab1 : write a program produce the following
+
+output : 0 1 2 3 4 5 6 7 8 9 
+         1 2 3 4 5 6 7 8 9
+         2 3 4 5 6 7 8 9
+         3 4 5 6 7 8 9
+         4 5 6 7 8 9
+         5 6 7 8 9
+         7 8 9
+         8 9
+         9
+name : sabri talaat elenani
+
+*/
+
+// code begining
+#include <stdio.h>
+#include <string.h>
+
+
+// function body 
+void draw (){
+  int i =0 , j=0 ;
+  // itrations
+  for (i; i<10; i++){
+    printf("\n ");
+    for (j=i; j<10; j++){
+      printf("%d ",j);
+      }
+    }
+  }
+
+int main(void){ 
+// function calling
+ draw() ;
+  return 0 ;
+}
