@@ -1,0 +1,37 @@
+/*
+lab1 : write a function to calculate the minimum value of any gevin array
+
+name : sabri talaat elenani
+
+*/
+
+// code begining
+#include <stdio.h>
+#include <string.h>
+
+
+// function body 
+int calcMin (int values[] , int n){
+  int i =1 , mini =values[0] ;
+
+  // itrations
+  for (i; i<n; i++){
+    if (mini > values[i]){
+       mini =values[i];
+    }
+  return mini;
+  }
+
+
+}
+
+int main(void){
+
+  // array
+  int x[] = {10,2,5,4,8,7,1,2};
+  // function calling
+  int r =calcMin(x,8);
+  printf("the minimum = %d",r);
+
+  return 0 ;
+}
