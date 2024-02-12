@@ -1,0 +1,41 @@
+/*
+lab1 : write a program uses a function to calculate the factoial of any positive number
+
+name : sabri talaat elenani
+
+*/
+
+// code begining
+#include <stdio.h>
+#include <string.h>
+
+
+// function body 
+int factorial (int x){
+  int i = 1 ;
+  int y = 1 ;
+
+  if (x>0){
+    for(i; i<= x; i++){
+       y *=i ;
+    }
+
+  }
+  else
+    printf("wrong-input");
+
+  return y ; 
+}
+
+int main(void){
+
+  int a , b;
+  printf("input:");
+  scanf (%d,&a);
+
+// function calling
+  b = factorial(a);
+  printf("factorial =%d",a);
+
+  return 0 ;
+}
