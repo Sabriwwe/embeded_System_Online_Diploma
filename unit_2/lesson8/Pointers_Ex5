@@ -1,0 +1,41 @@
+/*
+
+Ex5 :Write a program in C to show a pointer to an array which contents
+are pointer to structure.
+
+name : sabri talaat elenani.
+*/
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+struct employee {
+    
+    char name [25];
+    int id ;
+};
+
+int main()
+{
+    struct employee *emp_arr_ptr[2] ;
+    
+    int i ; 
+    for (i=0 ; i<= 2 ;i++){
+        emp_arr_ptr[i] = (struct employee *)malloc(sizeof(struct employee));
+    }
+    
+    
+    strcpy(emp_arr_ptr[0]->name, "Alex") ;
+    emp_arr_ptr[0]->id = 1002 ;
+    
+    
+     printf("Employee Name : %s\n", emp_arr_ptr[0]->name);
+     printf("Employee ID   : %d\n", emp_arr_ptr[0]->id);
+     
+     for (int i = 0; i < 2; i++) {
+        free(emp_arr_ptr[i]);
+    }
+    
+    return 0;
+}
