@@ -1,0 +1,26 @@
+/*
+
+Ex2 : Write a program in C to print all the alphabets using a pointer. Go
+to the editor
+
+name : sabri talaat elenani
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    char *PTR ;
+    
+    PTR = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" ;
+    printf("The Alphabets are :");
+    
+    while (*PTR !='\0'){
+        
+        printf("%c ",*PTR);
+        PTR++ ;
+        
+    }
+    
+    return 0;
+}
