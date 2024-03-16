@@ -1,0 +1,28 @@
+/*
+
+Ex3 : Write a program in C to print a string in reverse using a pointer
+
+name : sabri talaat elenai
+*/
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char *PTR ;
+    
+    PTR = "w3resource" ;
+    printf("Input a string : w3resource\n");
+    printf("Reverse of the string is : ");
+    PTR = PTR + strlen(PTR);
+    
+    while (1){
+        
+        printf("%c",*PTR);
+        if (*PTR == 'w')
+        break ;
+        PTR-- ;
+    }
+    
+    return 0;
+}
