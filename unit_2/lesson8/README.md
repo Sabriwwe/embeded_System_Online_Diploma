@@ -1,0 +1,1 @@
+pointers_assingments_solutions_here
